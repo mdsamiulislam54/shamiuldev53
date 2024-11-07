@@ -80,26 +80,33 @@
     letter-spacing: 5px;
 }
 
-.preloder{
-    border: 4px solid;
-    border-top: transparent;
-    animation: loder 1s linear infinite;
+.visualizer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 200px;
+    height: 100px;
 }
 
-@keyframes loder{
-    25%{
-        color: tomato;
-    }
-    50%{
-        color: pink;
-    }
-    75%{
-        color: red;
-    }
-    100%{
-        color: orange;
-    }
-    to{
-        transform: rotate(360deg);
-    }
+.bar {
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+    animation: upDown 1s ease-in-out infinite;
+    transform-origin: bottom;
+    border-radius: 2px;
+    margin-left: 10px;
 }
+
+/* Animate each bar at a slightly different timing */
+.bar:nth-child(1) { animation-delay: 0.1s; }
+.bar:nth-child(2) { animation-delay: 0.2s; }
+.bar:nth-child(3) { animation-delay: 0.3s; }
+.bar:nth-child(4) { animation-delay: 0.4s; }
+.bar:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes upDown {
+    0%, 100% { height: 10%; }
+    50% { height: 20%; }
+}
+
