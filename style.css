@@ -1,0 +1,105 @@
+/* .outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+    
+}
+.dot{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    
+    border: 1px solid red;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+  
+    
+
+} */
+
+.circle{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border:  2px solid ;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    border: 2px solid gold;
+    border-radius: 50%;
+    pointer-events: none;
+    cursor: none;
+    transition: .20s;
+    
+}
+.dot{
+    
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    left:50% ;
+    background-color: red;
+    transform: translate(-50%, -50%);
+    position:absolute ;
+    top: 50%;
+   border: 2px red #fff;
+    
+   
+   
+  
+    
+
+}
+
+.clock {
+    background:transparent;
+    border-radius: 10px;
+    padding: 0px;
+    margin: px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#time {
+    font-size: 16px;
+    color: gold;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.preloder{
+    border: 4px solid;
+    border-top: transparent;
+    animation: loder 1s linear infinite;
+}
+
+@keyframes loder{
+    25%{
+        color: tomato;
+    }
+    50%{
+        color: pink;
+    }
+    75%{
+        color: red;
+    }
+    100%{
+        color: orange;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
